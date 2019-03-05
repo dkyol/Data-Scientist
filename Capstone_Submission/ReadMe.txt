@@ -4,6 +4,15 @@ I analyzed demographics data for customers of a mail-order sales company in Germ
 
 Then I applied the model on a third dataset with demographics information for targets of a marketing campaign for the company to predict which individuals are most likely to convert into becoming customers for the company. 
 
+The results of the analysis was a model could be used to improve the business in the current form.
+
+The approach here was use all of the data available in it raw form before completing feature scaling, feature creation and/or other pre-processing steps. These results were accomplished without incorporating more than 200 features that may require additional domain knowledge to incorporate effectively.
+
+Experimentation with different model architectures, different out of the box techniques, hyperparameters could also improve the accuracy/recall/precision of the model. 
+
+A high-level description of the code and results can be found here:
+https://medium.com/@dkylemiller/machine-learning-with-categorical-variables-4f7d1427004a
+
 Datasets:
 
 Udacity_AZDIAS_052018.csv: Demographics data for the general population of Germany; 891 211 persons (rows) x 366 features (columns).
@@ -28,6 +37,3 @@ from keras.callbacks import ModelCheckpoint
 from sklearn.metrics import classification_report
 from sklearn.metrics import confusion_matrix
 from sklearn.metrics import roc_auc_score
-
-A high-level description of the code and results can be found here:
-https://medium.com/@dkylemiller/machine-learning-with-categorical-variables-4f7d1427004a
