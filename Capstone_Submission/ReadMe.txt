@@ -29,3 +29,7 @@ from sklearn.metrics import classification_report
 from sklearn.metrics import confusion_matrix
 from sklearn.metrics import roc_auc_score
 
+A high-level description of the code and results can be found here:
+
+https://medium.com/@dkylemiller/machine-learning-with-categorical-variables-4f7d1427004a
+
